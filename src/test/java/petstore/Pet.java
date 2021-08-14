@@ -87,7 +87,7 @@ public class Pet {
                 .log().all()
                 .statusCode(200)
                 .body("name", is("Mimi"))
-                .body("status",is("sold"))
+                .body("status",is("Disponivel"))
         ;
     }
 
