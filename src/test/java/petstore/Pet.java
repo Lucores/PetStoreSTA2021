@@ -41,7 +41,7 @@ public class Pet {
         .then()  // Então
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
+                .body("name", is("Mimi"))
                 .body("status", is("available"))
                 .body("category.name", is("AX2345LORT"))
                 .body("tags.name", contains("data"))
@@ -63,7 +63,7 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
+                .body("name", is("Mimi"))
                 .body("category.name", is("AX2345LORT"))
                 .body("status",is("available"))
         .extract()
@@ -86,7 +86,7 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
+                .body("name", is("Mimi"))
                 .body("status",is("sold"))
         ;
     }
