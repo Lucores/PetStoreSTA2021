@@ -52,7 +52,7 @@ public class Pet {
 
     @Test(priority=2)
     public void consultarPet(){
-        String petId = "74330309";
+        String petId = "74330309551";
 
         String token =
         given()
@@ -93,7 +93,7 @@ public class Pet {
 
     @Test (priority = 4)
     public void excluirPet(){
-        String petId = "74330309";
+        String petId = "74330309551";
 
         given()
                 .contentType("application/json")
