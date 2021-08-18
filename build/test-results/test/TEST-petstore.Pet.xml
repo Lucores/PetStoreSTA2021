@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-18T12:13:00" hostname="DESKTOP-RMPPO2N" time="13.446">
+<testsuite name="petstore.Pet" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-18T12:24:53" hostname="DESKTOP-RMPPO2N" time="11.435">
   <properties/>
-  <testcase name="alterarPet" classname="petstore.Pet" time="9.65"/>
-  <testcase name="consultarPet" classname="petstore.Pet" time="1.374"/>
-  <testcase name="excluirPet" classname="petstore.Pet" time="1.2"/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="1.211"/>
-  <system-out><![CDATA[Request method:	PUT
+  <testcase name="incluirPet" classname="petstore.Pet" time="8.016"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="1.286"/>
+  <testcase name="alterarPet" classname="petstore.Pet" time="1.166"/>
+  <testcase name="excluirPet" classname="petstore.Pet" time="0.949"/>
+  <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
 Request params:	<none>
@@ -33,10 +33,10 @@ Body:
             "name": "data"
         }
     ],
-    "status": "Disponivel"
+    "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:13:06 GMT
+Date: Wed, 18 Aug 2021 12:24:58 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -61,7 +61,7 @@ Server: Jetty(9.2.9.v20150224)
             "name": "data"
         }
     ],
-    "status": "Disponivel"
+    "status": "available"
 }
 Request method:	GET
 Request URI:	https://petstore.swagger.io/v2/pet/74330309551
@@ -76,7 +76,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:13:10 GMT
+Date: Wed, 18 Aug 2021 12:25:01 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -104,34 +104,7 @@ Server: Jetty(9.2.9.v20150224)
     "status": "available"
 }
 O token e AX2345LORT
-Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/pet/74330309551
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:13:11 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "code": 200,
-    "type": "unknown",
-    "message": "74330309551"
-}
-Request method:	POST
+Request method:	PUT
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
 Request params:	<none>
@@ -159,10 +132,10 @@ Body:
             "name": "data"
         }
     ],
-    "status": "available"
+    "status": "Disponivel"
 }
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:13:12 GMT
+Date: Wed, 18 Aug 2021 12:25:03 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -187,7 +160,34 @@ Server: Jetty(9.2.9.v20150224)
             "name": "data"
         }
     ],
-    "status": "available"
+    "status": "Disponivel"
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 18 Aug 2021 12:25:04 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "74330309551"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

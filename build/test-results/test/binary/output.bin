@@ -1,4 +1,4 @@
-Request method:	PUT
+Request method:	POST
 1Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
 Request params:	<none>
@@ -28,10 +28,10 @@
 
         }
     ],
-    "status": "Disponivel"
+    "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:13:06 GMT
+%Date: Wed, 18 Aug 2021 12:24:58 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -58,7 +58,7 @@
 
         }
     ],
-    "status": "Disponivel"
+    "status": "available"
 }
 Request method:	GET
 =Request URI:	https://petstore.swagger.io/v2/pet/74330309551
@@ -73,7 +73,7 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:13:10 GMT
+%Date: Wed, 18 Aug 2021 12:25:01 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -103,8 +103,8 @@
     "status": "available"
 }
 O token e AX2345LORT
-Request method:	DELETE
-=Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+Request method:	PUT
+1Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -114,9 +114,29 @@
 2				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "id": 74330309551,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Mimi",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 20210812,
+            "name": "data"
+
+        }
+    ],
+    "status": "Disponivel"
+}
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:13:11 GMT
+%Date: Wed, 18 Aug 2021 12:25:03 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -126,12 +146,27 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "code": 200,
-    "type": "unknown",
-    "message": "74330309551"
+    "id": 74330309551,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Mimi",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 20210812,
+            "name": "data"
+
+        }
+    ],
+    "status": "Disponivel"
 }
-Request method:	POST
-1Request URI:	https://petstore.swagger.io/v2/pet
+Request method:	DELETE
+=Request URI:	https://petstore.swagger.io/v2/pet/74330309551
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -141,29 +176,9 @@
 2				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": 74330309551,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Mimi",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-
-        {
-            "id": 20210812,
-            "name": "data"
-
-        }
-    ],
-    "status": "available"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:13:12 GMT
+%Date: Wed, 18 Aug 2021 12:25:04 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -173,22 +188,7 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Mimi",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-
-        {
-            "id": 20210812,
-            "name": "data"
-
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "74330309551"
 }
