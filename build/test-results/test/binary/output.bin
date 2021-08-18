@@ -11,12 +11,12 @@
 Multiparts:		<none>
 Body:
 {
-    "id": 7433030955120,
+    "id": 902123456789,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
     },
-    "name": "Mimi",
+    "name": "Lili",
     "photoUrls": [
         "string"
     ],
@@ -31,7 +31,7 @@
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 13:00:55 GMT
+%Date: Wed, 18 Aug 2021 13:06:20 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,12 +41,12 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 7433030955120,
+    "id": 902123456789,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
     },
-    "name": "Mimi",
+    "name": "Lili",
     "photoUrls": [
         "string"
     ],
@@ -61,7 +61,7 @@
     "status": "available"
 }
 Request method:	GET
-?Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
+>Request URI:	https://petstore.swagger.io/v2/pet/902123456789
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -72,8 +72,8 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 404 Not Found
-%Date: Wed, 18 Aug 2021 13:00:58 GMT
+HTTP/1.1 200 OK
+%Date: Wed, 18 Aug 2021 13:06:23 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -83,10 +83,26 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "code": 1,
-    "type": "error",
-    "message": "Pet not found"
+    "id": 902123456789,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Lili",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 20210812,
+            "name": "data"
+
+        }
+    ],
+    "status": "available"
 }
+O token e AX2345LORT
 Request method:	PUT
 1Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -100,12 +116,12 @@
 Multiparts:		<none>
 Body:
 {
-    "id": 7433030955120,
+    "id": 902123456789,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
     },
-    "name": "Mimi",
+    "name": "Lili",
     "photoUrls": [
         "string"
     ],
@@ -120,7 +136,7 @@
     "status": "Disponivel"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 13:00:59 GMT
+%Date: Wed, 18 Aug 2021 13:06:24 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -130,12 +146,12 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 7433030955120,
+    "id": 902123456789,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
     },
-    "name": "Mimi",
+    "name": "Lili",
     "photoUrls": [
         "string"
     ],
@@ -150,7 +166,7 @@
     "status": "Disponivel"
 }
 Request method:	DELETE
-?Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
+>Request URI:	https://petstore.swagger.io/v2/pet/902123456789
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -162,7 +178,7 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 13:01:00 GMT
+%Date: Wed, 18 Aug 2021 13:06:25 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -174,5 +190,5 @@
 {
     "code": 200,
     "type": "unknown",
-    "message": "7433030955120"
+    "message": "902123456789"
 }
