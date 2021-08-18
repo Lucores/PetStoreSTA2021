@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="4" skipped="0" failures="1" errors="0" timestamp="2021-08-18T12:54:50" hostname="DESKTOP-RMPPO2N" time="9.212">
+<testsuite name="petstore.Pet" tests="4" skipped="0" failures="1" errors="0" timestamp="2021-08-18T13:00:52" hostname="DESKTOP-RMPPO2N" time="9.968">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="5.957"/>
-  <testcase name="consultarPet" classname="petstore.Pet" time="1.14">
+  <testcase name="incluirPet" classname="petstore.Pet" time="6.796"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="1.062">
     <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 
@@ -98,8 +98,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="alterarPet" classname="petstore.Pet" time="1.092"/>
-  <testcase name="excluirPet" classname="petstore.Pet" time="1.023"/>
+  <testcase name="alterarPet" classname="petstore.Pet" time="0.985"/>
+  <testcase name="excluirPet" classname="petstore.Pet" time="1.078"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -113,7 +113,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -131,7 +131,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:54:53 GMT
+Date: Wed, 18 Aug 2021 13:00:55 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -141,7 +141,7 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -159,7 +159,7 @@ Server: Jetty(9.2.9.v20150224)
     "status": "available"
 }
 Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -171,7 +171,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 18 Aug 2021 12:54:56 GMT
+Date: Wed, 18 Aug 2021 13:00:58 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -198,7 +198,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -216,7 +216,7 @@ Body:
     "status": "Disponivel"
 }
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:54:57 GMT
+Date: Wed, 18 Aug 2021 13:00:59 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -226,7 +226,7 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -244,7 +244,7 @@ Server: Jetty(9.2.9.v20150224)
     "status": "Disponivel"
 }
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -256,7 +256,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 18 Aug 2021 12:54:58 GMT
+Date: Wed, 18 Aug 2021 13:01:00 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -268,7 +268,7 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "74330309551"
+    "message": "7433030955120"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

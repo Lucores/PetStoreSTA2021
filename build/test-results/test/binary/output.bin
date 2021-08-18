@@ -11,7 +11,7 @@
 Multiparts:		<none>
 Body:
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -31,7 +31,7 @@
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:54:53 GMT
+%Date: Wed, 18 Aug 2021 13:00:55 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,7 +41,7 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -61,7 +61,7 @@
     "status": "available"
 }
 Request method:	GET
-=Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+?Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -73,7 +73,7 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-%Date: Wed, 18 Aug 2021 12:54:56 GMT
+%Date: Wed, 18 Aug 2021 13:00:58 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -100,7 +100,7 @@
 Multiparts:		<none>
 Body:
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -120,7 +120,7 @@
     "status": "Disponivel"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:54:57 GMT
+%Date: Wed, 18 Aug 2021 13:00:59 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -130,7 +130,7 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
+    "id": 7433030955120,
     "category": {
         "id": 1,
         "name": "AX2345LORT"
@@ -150,7 +150,7 @@
     "status": "Disponivel"
 }
 Request method:	DELETE
-=Request URI:	https://petstore.swagger.io/v2/pet/74330309551
+?Request URI:	https://petstore.swagger.io/v2/pet/7433030955120
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -162,7 +162,7 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:54:58 GMT
+%Date: Wed, 18 Aug 2021 13:01:00 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -174,5 +174,5 @@
 {
     "code": 200,
     "type": "unknown",
-    "message": "74330309551"
+    "message": "7433030955120"
 }

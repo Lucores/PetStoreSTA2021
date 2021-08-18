@@ -41,7 +41,7 @@ public class Pet {
         .then()  // Entao
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("status", is("available"))
                 .body("category.name", is("AX2345LORT"))
                 .body("tags.name", contains("data"))
@@ -52,7 +52,7 @@ public class Pet {
 
     @Test(priority=2)
     public void consultarPet(){
-        String petId = "7433030955120";
+        String petId = "902123456789";
 
         String token =
         given()
@@ -63,7 +63,7 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("category.name", is("AX2345LORT"))
                 .body("status",is("available"))
         .extract()
@@ -86,14 +86,14 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("status",is("Disponivel"))
         ;
     }
 
     @Test (priority = 4)
     public void excluirPet(){
-        String petId = "7433030955120";
+        String petId = "902123456789";
 
         given()
                 .contentType("application/json")
