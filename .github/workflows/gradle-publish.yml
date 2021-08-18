@@ -8,12 +8,9 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+ build:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
 
     steps:
     - uses: actions/checkout@v2
@@ -22,12 +19,11 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+    - name: Build test
+      run: gradle test
 
-    - name: Build with Gradle
-      run: gradle build
-
+    
+     
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
