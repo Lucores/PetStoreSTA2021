@@ -16,20 +16,20 @@ import static org.hamcrest.Matchers.contains;
 // 3 - Classe
 public class Pet {
     // 3.1 - Atributos
-    String uri = "https://petstore.swagger.io/v2/pet"; // endereço da entidade Pet
+    String uri = "https://petstore.swagger.io/v2/pet"; // endereco da entidade Pet
 
-    // 3.2 - Métodos e Funções
+    // 3.2 - Metodos e Funcoes
     public String lerJson(String caminhoJson) throws IOException {
         return new String(Files.readAllBytes(Paths.get(caminhoJson)));
     }
 
     // Incluir - Create - Post
-    @Test(priority = 1)  // Identifica o método ou função como um teste para o TestNG
+    @Test(priority = 1)  // Identifica o metodo ou funcaoo como um teste para o TestNG
     public void incluirPet() throws IOException {
         String jsonBody = lerJson("db/pet1.json");
 
         // Sintaxe Gherkin
-        // Dado - Quando - Então
+        // Dado - Quando - Entao
         // Given - When - Then
 
         given() // Dado
@@ -38,10 +38,10 @@ public class Pet {
                 .body(jsonBody)
         .when()  // Quando
                 .post(uri)
-        .then()  // Então
+        .then()  // Entao
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("status", is("available"))
                 .body("category.name", is("AX2345LORT"))
                 .body("tags.name", contains("data"))
@@ -52,7 +52,7 @@ public class Pet {
 
     @Test(priority=2)
     public void consultarPet(){
-        String petId = "74330309";
+        String petId = "902123456789";
 
         String token =
         given()
@@ -63,13 +63,13 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("category.name", is("AX2345LORT"))
                 .body("status",is("available"))
         .extract()
                 .path("category.name")
         ;
-        System.out.println("O token é " + token);
+        System.out.println("O token e " + token);
 
     }
 
@@ -86,14 +86,14 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Mimi"))
+                .body("name", is("Lili"))
                 .body("status",is("Disponivel"))
         ;
     }
 
     @Test (priority = 4)
     public void excluirPet(){
-        String petId = "74330309";
+        String petId = "902123456789";
 
         given()
                 .contentType("application/json")
