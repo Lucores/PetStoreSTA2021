@@ -31,7 +31,7 @@
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:24:58 GMT
+%Date: Wed, 18 Aug 2021 12:54:53 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -72,8 +72,8 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:25:01 GMT
+HTTP/1.1 404 Not Found
+%Date: Wed, 18 Aug 2021 12:54:56 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -83,26 +83,10 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 74330309551,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Mimi",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-
-        {
-            "id": 20210812,
-            "name": "data"
-
-        }
-    ],
-    "status": "available"
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
 }
-O token e AX2345LORT
 Request method:	PUT
 1Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -136,7 +120,7 @@
     "status": "Disponivel"
 }
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:25:03 GMT
+%Date: Wed, 18 Aug 2021 12:54:57 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -178,7 +162,7 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-%Date: Wed, 18 Aug 2021 12:25:04 GMT
+%Date: Wed, 18 Aug 2021 12:54:58 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
